@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.csr_btn .hidden_csr{
+    display: none;
+}
+
+.sns{
+    background: url(/Images/Common/icon_out_youtube.jpg) no-repeat center 0;
+}
