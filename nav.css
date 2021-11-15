@@ -11,9 +11,7 @@ ul, li{
 a{
     text-decoration: none;
 }
-body{
-    background-color: tomato;
-}
+
 
 nav{
     padding: 1rem 3rem;
@@ -49,6 +47,47 @@ nav{
     color: #d20b2f;
 }
 
+.BP{
+    position: relative;
+}
+.AK{
+    position: relative;
+}
+.hidden_menu{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    bottom: -6rem;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+
+.hidden_menu_two{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 2rem;    
+    background-color: rgba(255, 255, 255, 0.596);
+}
+.hidden_menu_two a{
+    color: rgba(0, 0, 0, 0.9);
+    font-weight:300;      
+    font-size: 1rem; 
+}
+
+.hidden_menu a{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight:lighter;    
+    font-size: 1rem;
+}
+
+.BP:hover .hidden_menu{
+    display: block;
+}
+
+.AK:hover .hidden_menu_two{
+    display: block;
+}
+
 .logo img{
     width: 7.5rem;
     height: auto;
@@ -63,6 +102,19 @@ nav{
 
 .csr_btn .hidden_csr{
     display: none;
+}
+
+.hidden_csr{
+    color: white;
+    font-weight: bold;
+}
+
+.csr_btn:hover .main_csr{
+    display: none;
+}
+
+.csr_btn:hover .hidden_csr{
+    display: block;
 }
 
 .csr_btn{
@@ -81,4 +133,32 @@ nav{
 .sns_icons img{
     width: 1.6rem;
     height: auto;
+}
+
+.side_menu{
+    display: none;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #d20b2f;
+}
+
+@media screen and (max-width:1213px) {
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu_list{
+        display: none;
+    }
+    .csr_btn{
+        display: none;
+    }
+    .side_menu{
+        display: block;
+    }
+
+    .sns_icons a{
+        margin: 0.5rem;
+    }
+
 }
